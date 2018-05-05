@@ -103,7 +103,7 @@ extension WatchConnectivityService : WCSessionDelegate {
         
         self.delegate?.reply(to: message, replyHandler: { (response) in
             
-            let identifier = response[UserInfoKey.identifier] ?? "reponse"
+            let identifier = response[UserInfoKey.identifier] ?? "response"
             let payload = response[UserInfoKey.payload] ?? [:]
             
             let userInfo: [String: Any] = [UserInfoKey.channel: Channel.sendMessage.rawValue,
