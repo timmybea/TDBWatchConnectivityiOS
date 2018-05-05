@@ -13,22 +13,22 @@ import Foundation
 // or when data is received or sent. Clients observe these notifications to update the UI.
 
 public extension Notification.Name {
-    static let dataDidFlow = Notification.Name("DataDidFlow")
-    static let activationDidComplete = Notification.Name("ActivationDidComplete")
-    static let reachabilityDidChange = Notification.Name("ReachabilityDidChange")
+    public static let dataDidFlow = Notification.Name("DataDidFlow")
+    public static let activationDidComplete = Notification.Name("ActivationDidComplete")
+    public static let reachabilityDidChange = Notification.Name("ReachabilityDidChange")
 }
 
 // Constants to organize and access the information in the notication userInfo dictionary.
 //
 public struct UserInfoKey {
-    static let channel = "channel" //String
-    static let identifier = "identifier" //String
-    static let phrase = "phrase" //String
-    static let payload = "payload" //[String: Any]
-    static let error = "error" //Error
-    static let activationStatus = "ectivationStatus"
-    static let reachable = "reachable"
-    static let fileURL = "fileURL"
+    public static let channel = "channel" //String
+    public static let identifier = "identifier" //String
+    public static let phrase = "phrase" //String
+    public static let payload = "payload" //[String: Any]
+    public static let error = "error" //Error
+    public static let activationStatus = "ectivationStatus"
+    public static let reachable = "reachable"
+    public static let fileURL = "fileURL"
 }
 
 // Constants to identify the Watch Connectivity methods, also used as user-visible strings in UI.

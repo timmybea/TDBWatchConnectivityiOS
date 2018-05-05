@@ -81,7 +81,7 @@ public class WatchConnectivityService: NSObject {
 //MARK: WCSessionDelegate methods
 extension WatchConnectivityService : WCSessionDelegate {
     
-    public func session(_ session: WCSession, activationDidCompleteWith activationState: WCSessionActivationState, error: Error?) {
+    open func session(_ session: WCSession, activationDidCompleteWith activationState: WCSessionActivationState, error: Error?) {
         //
     }
     
@@ -118,11 +118,11 @@ extension WatchConnectivityService : WCSessionDelegate {
     }
     
     #if os(iOS)
-    public func sessionDidBecomeInactive(_ session: WCSession) {
+    open func sessionDidBecomeInactive(_ session: WCSession) {
         //
     }
     
-    public func sessionDidDeactivate(_ session: WCSession) {
+    open func sessionDidDeactivate(_ session: WCSession) {
         //
     }
     #endif
